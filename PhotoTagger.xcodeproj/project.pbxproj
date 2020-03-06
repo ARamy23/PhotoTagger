@@ -195,8 +195,7 @@
 				B80AA1D42412CF750003847F /* Router */,
 				B80AA1DE2412E6010003847F /* System */,
 			);
-			name = Externals;
-			path = "../../../camelan-ios/camelan/camelan/Shared/Externals";
+			path = Externals;
 			sourceTree = "<group>";
 		};
 		B80AA1D22412CF750003847F /* Network */ = {

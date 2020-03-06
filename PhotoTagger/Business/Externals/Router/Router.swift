@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ARSLineProgress
 
 typealias AlertAction = (title: String, style: UIAlertAction.Style, action: () -> Void)
 
@@ -23,7 +22,6 @@ extension Routable where Self: UIViewController {
 }
 
 class Router: RouterProtocol {
-    
     var presentedView: UIViewController!
     
     func present(view: UIViewController) {
@@ -31,11 +29,11 @@ class Router: RouterProtocol {
     }
     
     func startActivityIndicator() {
-        ARSLineProgress.show()
+        
     }
     
     func stopActivityIndicator() {
-        ARSLineProgress.hide()
+        
     }
     
     func dismiss() {
@@ -85,20 +83,5 @@ class Router: RouterProtocol {
                 alert.addAction($0)
             }
         presentedView.present(alert, animated: true)
-    }
-    
-    fileprivate func switchTabBarViewController(tabBarController: UITabBarController, tabIndex: MainTabbarController.TabBarScene) {
-        tabBarController.selectedIndex = tabIndex.rawValue
-        presentedView = tabBarController.selectedViewController
-    }
-    
-    func switchTabBar(to tabIndex: MainTabbarController.TabBarScene) {
-        if let tabBarController = presentedView as? MainTabbarController {
-            switchTabBarViewController(tabBarController: tabBarController, tabIndex: tabIndex)
-        } else if let tabBarController = presentedView.tabBarController {
-            switchTabBarViewController(tabBarController: tabBarController, tabIndex: tabIndex)
-        } else {
-            assertionFailure("Couldn't switchh to \(tabIndex)")
-        }
     }
 }
