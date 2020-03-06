@@ -25,6 +25,7 @@
 		B80AA1DD2412E5300003847F /* SelectPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */; };
 		B80AA1E02412E6110003847F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1DF2412E6110003847F /* System.swift */; };
 		B80AA1E22412E7580003847F /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E12412E7570003847F /* Dynamic.swift */; };
+		B80AA1E52412FC730003847F /* ImageTaggerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewModel.swift; sourceTree = "<group>"; };
 		B80AA1DF2412E6110003847F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		B80AA1E12412E7570003847F /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTaggerInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		B80AA1CB2412CEEA0003847F /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				B80AA1E32412FC640003847F /* Interactors */,
 				B80AA1E12412E7570003847F /* Dynamic.swift */,
 				B80AA1D02412CF750003847F /* Externals */,
 			);
@@ -217,6 +220,14 @@
 				B80AA1DF2412E6110003847F /* System.swift */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		B80AA1E32412FC640003847F /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */,
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		DF28F3BEA41CAAB4C4B0A05E /* Frameworks */ = {
@@ -392,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80AA1E52412FC730003847F /* ImageTaggerInteractor.swift in Sources */,
 				B80AA1E22412E7580003847F /* Dynamic.swift in Sources */,
 				932ED1F71BF9390D0072C1C4 /* PhotoColor.swift in Sources */,
 				B80AA1DD2412E5300003847F /* SelectPhotoViewModel.swift in Sources */,

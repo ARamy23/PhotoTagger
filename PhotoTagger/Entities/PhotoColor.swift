@@ -22,7 +22,7 @@
 
 import Foundation
 
-struct PhotoColor {
+struct PhotoColor: Codable {
   var red: Int?
   var green: Int?
   var blue: Int?
