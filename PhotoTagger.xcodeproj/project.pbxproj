@@ -26,6 +26,7 @@
 		B80AA1E02412E6110003847F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1DF2412E6110003847F /* System.swift */; };
 		B80AA1E22412E7580003847F /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E12412E7570003847F /* Dynamic.swift */; };
 		B80AA1E52412FC730003847F /* ImageTaggerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */; };
+		B80AA1E72412FFF60003847F /* ImageSelecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E62412FFF60003847F /* ImageSelecter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B80AA1DF2412E6110003847F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		B80AA1E12412E7570003847F /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTaggerInteractor.swift; sourceTree = "<group>"; };
+		B80AA1E62412FFF60003847F /* ImageSelecter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelecter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				B80AA1DF2412E6110003847F /* System.swift */,
+				B80AA1E62412FFF60003847F /* ImageSelecter.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				B80AA1D82412CF750003847F /* Router.swift in Sources */,
 				B80AA1E02412E6110003847F /* System.swift in Sources */,
 				B80AA1DA2412CF7E0003847F /* ImaggaRouter.swift in Sources */,
+				B80AA1E72412FFF60003847F /* ImageSelecter.swift in Sources */,
 				B80AA1D62412CF750003847F /* ExternalProtocols.swift in Sources */,
 				932ED1FB1BF9459E0072C1C4 /* TagsColorsTableViewController.swift in Sources */,
 				9569363E1E0B06AC00B49A5A /* TagsColorTableData.swift in Sources */,

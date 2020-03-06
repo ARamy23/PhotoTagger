@@ -22,13 +22,17 @@ class SelectPhotoViewModel: NSObject {
     // MARK: Dependencies
     let network: NetworkProtocol
     let system: SystemProtocol
-    let router: Router
+    let router: RouterProtocol
+    let imageSelecter: ImageSelecter
     
     init(network: NetworkProtocol = MoyaManager(),
          system: SystemProtocol = SystemImp(),
+         imageSelecter: ImageSelecter = ImageSelecterImp(),
          router: RouterProtocol) {
         self.network = network
         self.system = system
+        self.imageSelecter = imageSelecter
+        self.router = router
     }
     
     func viewDidLoad() {
@@ -45,32 +49,19 @@ class SelectPhotoViewModel: NSObject {
     }
     
     func takePicture() {
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.allowsEditing = false
-        
-        if system.isCameraAvailable() {
-            picker.sourceType = .camera
-        } else {
-            picker.sourceType = .photoLibrary
-            picker.modalPresentationStyle = .fullScreen
-        }
-        
-        router.present(view: picker)
+        let imageSource: ImageSource = system.isCameraAvailable() ? .camera : .gallery
+        let picker = Picker(source: imageSource,
+                            presentationStyle: .fullscreen,
+                            allowsEditing: false,
+                            delegate: self,
+                            presentingViewController: router.presentedView)
+        imageSelecter.pickImage(from: picker)
     }
 }
 
-extension SelectPhotoViewModel: UINavigationControllerDelegate { }
-
-extension SelectPhotoViewModel: UIImagePickerControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController,
-    didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        guard let image = info[.originalImage] as? UIImage else {
-            print("Info did not have the required UIImage for the Original Image")
-            router.dismiss()
-            return
-        }
-        
+extension SelectPhotoViewModel: ImageSelecterDelegate {
+    
+    func didSelectImage(image: UIImage) {
         photo.value = image
         
         isTakePhotoButtonVisibile.value = false
@@ -83,8 +74,9 @@ extension SelectPhotoViewModel: UIImagePickerControllerDelegate {
         interactor
             .uploadImage { progress in
                 self.progressBarProgress.value = progress
-            }.then(interactor.fetchTagsAndColors)
-            .then { (response) in
+        }
+        .then(interactor.fetchTagsAndColors)
+        .then { (response) in
                 let tags = response.0
                 let colors = response.1
                 
@@ -93,8 +85,6 @@ extension SelectPhotoViewModel: UIImagePickerControllerDelegate {
                 self.shouldAnimateActivityIndicator.value = false
                 
                 // TODO: - Route to TagsView
-            }
-        
-        picker.dismiss(animated: true, completion: nil)
+        }
     }
 }
