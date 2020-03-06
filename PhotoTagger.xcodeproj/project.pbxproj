@@ -22,6 +22,9 @@
 		B80AA1D72412CF750003847F /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D32412CF750003847F /* MoyaManager.swift */; };
 		B80AA1D82412CF750003847F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D52412CF750003847F /* Router.swift */; };
 		B80AA1DA2412CF7E0003847F /* ImaggaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */; };
+		B80AA1DD2412E5300003847F /* SelectPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */; };
+		B80AA1E02412E6110003847F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1DF2412E6110003847F /* System.swift */; };
+		B80AA1E22412E7580003847F /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E12412E7570003847F /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		B80AA1D32412CF750003847F /* MoyaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
 		B80AA1D52412CF750003847F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaggaRouter.swift; sourceTree = "<group>"; };
+		B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewModel.swift; sourceTree = "<group>"; };
+		B80AA1DF2412E6110003847F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		B80AA1E12412E7570003847F /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				93EF0CA51BF41DA20051B5B1 /* ViewController.swift */,
+				B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */,
 			);
 			path = "Select Photo";
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 		B80AA1CB2412CEEA0003847F /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				B80AA1E12412E7570003847F /* Dynamic.swift */,
 				B80AA1D02412CF750003847F /* Externals */,
 			);
 			path = Business;
@@ -180,6 +188,7 @@
 				B80AA1D12412CF750003847F /* ExternalProtocols.swift */,
 				B80AA1D22412CF750003847F /* Network */,
 				B80AA1D42412CF750003847F /* Router */,
+				B80AA1DE2412E6010003847F /* System */,
 			);
 			name = Externals;
 			path = "../../../camelan-ios/camelan/camelan/Shared/Externals";
@@ -200,6 +209,14 @@
 				B80AA1D52412CF750003847F /* Router.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B80AA1DE2412E6010003847F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1DF2412E6110003847F /* System.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 		DF28F3BEA41CAAB4C4B0A05E /* Frameworks */ = {
@@ -375,9 +392,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80AA1E22412E7580003847F /* Dynamic.swift in Sources */,
 				932ED1F71BF9390D0072C1C4 /* PhotoColor.swift in Sources */,
+				B80AA1DD2412E5300003847F /* SelectPhotoViewModel.swift in Sources */,
 				932ED1F91BF944590072C1C4 /* TagsColorsViewController.swift in Sources */,
 				B80AA1D82412CF750003847F /* Router.swift in Sources */,
+				B80AA1E02412E6110003847F /* System.swift in Sources */,
 				B80AA1DA2412CF7E0003847F /* ImaggaRouter.swift in Sources */,
 				B80AA1D62412CF750003847F /* ExternalProtocols.swift in Sources */,
 				932ED1FB1BF9459E0072C1C4 /* TagsColorsTableViewController.swift in Sources */,
