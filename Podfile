@@ -7,4 +7,6 @@ target 'PhotoTagger' do
 
   # Pods for PhotoTagger
     pod 'Alamofire'
+    pod 'Moya'
+    pod 'PromisesSwift'
 end

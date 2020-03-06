@@ -17,8 +17,11 @@
 		93EF0CAB1BF41DA20051B5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAA1BF41DA20051B5B1 /* Assets.xcassets */; };
 		93EF0CAE1BF41DA20051B5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAC1BF41DA20051B5B1 /* LaunchScreen.storyboard */; };
 		9569363E1E0B06AC00B49A5A /* TagsColorTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */; };
-		B80AA1B82412CB7A0003847F /* ImaggaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1B72412CB7A0003847F /* ImaggaRouter.swift */; };
 		B80AA1C02412CE010003847F /* PhotoTaggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1BF2412CE010003847F /* PhotoTaggerTests.swift */; };
+		B80AA1D62412CF750003847F /* ExternalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D12412CF750003847F /* ExternalProtocols.swift */; };
+		B80AA1D72412CF750003847F /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D32412CF750003847F /* MoyaManager.swift */; };
+		B80AA1D82412CF750003847F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D52412CF750003847F /* Router.swift */; };
+		B80AA1DA2412CF7E0003847F /* ImaggaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +49,13 @@
 		93EF0CAD1BF41DA20051B5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93EF0CAF1BF41DA20051B5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsColorTableData.swift; sourceTree = "<group>"; };
-		B80AA1B72412CB7A0003847F /* ImaggaRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaggaRouter.swift; sourceTree = "<group>"; };
 		B80AA1BD2412CE000003847F /* PhotoTaggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoTaggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80AA1BF2412CE010003847F /* PhotoTaggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTaggerTests.swift; sourceTree = "<group>"; };
 		B80AA1C12412CE010003847F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B80AA1D12412CF750003847F /* ExternalProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalProtocols.swift; sourceTree = "<group>"; };
+		B80AA1D32412CF750003847F /* MoyaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
+		B80AA1D52412CF750003847F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaggaRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,9 @@
 				FFC5A5CE3B3BD979D6505293 /* Pods */,
 				DF28F3BEA41CAAB4C4B0A05E /* Frameworks */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 		};
 		93EF0CA11BF41DA20051B5B1 /* Products */ = {
 			isa = PBXGroup;
@@ -96,17 +102,12 @@
 		93EF0CA21BF41DA20051B5B1 /* PhotoTagger */ = {
 			isa = PBXGroup;
 			children = (
-				B80AA1B72412CB7A0003847F /* ImaggaRouter.swift */,
-				93EF0CA31BF41DA20051B5B1 /* AppDelegate.swift */,
-				93EF0CAA1BF41DA20051B5B1 /* Assets.xcassets */,
-				93EF0CAF1BF41DA20051B5B1 /* Info.plist */,
+				B80AA1CD2412CF150003847F /* Core */,
+				B80AA1CC2412CF030003847F /* Entities */,
+				B80AA1CB2412CEEA0003847F /* Business */,
+				B80AA1C82412CE7C0003847F /* Presentation */,
 				93EF0CAC1BF41DA20051B5B1 /* LaunchScreen.storyboard */,
 				93EF0CA71BF41DA20051B5B1 /* Main.storyboard */,
-				932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */,
-				932ED1FA1BF9459E0072C1C4 /* TagsColorsTableViewController.swift */,
-				932ED1F81BF944590072C1C4 /* TagsColorsViewController.swift */,
-				9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */,
-				93EF0CA51BF41DA20051B5B1 /* ViewController.swift */,
 			);
 			path = PhotoTagger;
 			sourceTree = "<group>";
@@ -118,6 +119,87 @@
 				B80AA1C12412CE010003847F /* Info.plist */,
 			);
 			path = PhotoTaggerTests;
+			sourceTree = "<group>";
+		};
+		B80AA1C82412CE7C0003847F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1CA2412CEC30003847F /* Tags and Colors */,
+				B80AA1C92412CE900003847F /* Select Photo */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B80AA1C92412CE900003847F /* Select Photo */ = {
+			isa = PBXGroup;
+			children = (
+				93EF0CA51BF41DA20051B5B1 /* ViewController.swift */,
+			);
+			path = "Select Photo";
+			sourceTree = "<group>";
+		};
+		B80AA1CA2412CEC30003847F /* Tags and Colors */ = {
+			isa = PBXGroup;
+			children = (
+				932ED1FA1BF9459E0072C1C4 /* TagsColorsTableViewController.swift */,
+				932ED1F81BF944590072C1C4 /* TagsColorsViewController.swift */,
+			);
+			path = "Tags and Colors";
+			sourceTree = "<group>";
+		};
+		B80AA1CB2412CEEA0003847F /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1D02412CF750003847F /* Externals */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		B80AA1CC2412CF030003847F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */,
+				9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B80AA1CD2412CF150003847F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				93EF0CA31BF41DA20051B5B1 /* AppDelegate.swift */,
+				93EF0CAA1BF41DA20051B5B1 /* Assets.xcassets */,
+				93EF0CAF1BF41DA20051B5B1 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B80AA1D02412CF750003847F /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1D12412CF750003847F /* ExternalProtocols.swift */,
+				B80AA1D22412CF750003847F /* Network */,
+				B80AA1D42412CF750003847F /* Router */,
+			);
+			name = Externals;
+			path = "../../../camelan-ios/camelan/camelan/Shared/Externals";
+			sourceTree = "<group>";
+		};
+		B80AA1D22412CF750003847F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */,
+				B80AA1D32412CF750003847F /* MoyaManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B80AA1D42412CF750003847F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1D52412CF750003847F /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		DF28F3BEA41CAAB4C4B0A05E /* Frameworks */ = {
@@ -189,6 +271,7 @@
 				TargetAttributes = {
 					93EF0C9F1BF41DA20051B5B1 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 969Y6REAB6;
 						LastSwiftMigration = 0810;
 					};
 					B80AA1BC2412CE000003847F = {
@@ -247,10 +330,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -288,11 +377,14 @@
 			files = (
 				932ED1F71BF9390D0072C1C4 /* PhotoColor.swift in Sources */,
 				932ED1F91BF944590072C1C4 /* TagsColorsViewController.swift in Sources */,
+				B80AA1D82412CF750003847F /* Router.swift in Sources */,
+				B80AA1DA2412CF7E0003847F /* ImaggaRouter.swift in Sources */,
+				B80AA1D62412CF750003847F /* ExternalProtocols.swift in Sources */,
 				932ED1FB1BF9459E0072C1C4 /* TagsColorsTableViewController.swift in Sources */,
 				9569363E1E0B06AC00B49A5A /* TagsColorTableData.swift in Sources */,
-				B80AA1B82412CB7A0003847F /* ImaggaRouter.swift in Sources */,
 				93EF0CA61BF41DA20051B5B1 /* ViewController.swift in Sources */,
 				93EF0CA41BF41DA20051B5B1 /* AppDelegate.swift in Sources */,
+				B80AA1D72412CF750003847F /* MoyaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,12 +521,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = PhotoTagger/Info.plist;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoTagger/Core/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.PhotoTagger;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramy.PhotoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -445,12 +539,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = PhotoTagger/Info.plist;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoTagger/Core/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.PhotoTagger;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramy.PhotoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

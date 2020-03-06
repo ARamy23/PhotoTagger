@@ -22,7 +22,6 @@
 
 import UIKit
 import Alamofire
-import ImaggaRouter
 
 class ViewController: UIViewController {
 
@@ -82,7 +81,7 @@ class ViewController: UIViewController {
 extension ViewController: UIImagePickerControllerDelegate {
 
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
-    guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+    guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
       print("Info did not have the required UIImage for the Original Image")
       dismiss(animated: true)
       return
@@ -123,7 +122,7 @@ extension ViewController {
   func upload(image: UIImage,
               progressCompletion: @escaping (_ percent: Float) -> Void,
               completion: @escaping (_ tags: [String], _ colors: [PhotoColor]) -> Void) {
-    guard let imageData = UIImageJPEGRepresentation(image, 0.5) else {
+    guard let imageData = image.jpegData(compressionQuality: 0.5) else {
       print("Could not get JPEG representation of UIImage")
       return
     }
