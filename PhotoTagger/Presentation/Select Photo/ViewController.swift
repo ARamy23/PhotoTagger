@@ -32,16 +32,21 @@ class ViewController: UIViewController, Routable {
     @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
     
     // MARK: - Properties
-    fileprivate var tags: [String]?
-    fileprivate var colors: [PhotoColor]?
-    
-    lazy var viewModel = SelectPhotoViewModel(router: self.router)
+    private var tags: [String]?
+    private var colors: [PhotoColor]?
+    private lazy var imageSelecter = ImageSelecter(presentingView: self)
+    private lazy var viewModel = SelectPhotoViewModel(imageSelecter: imageSelecter, router: router)
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
         viewModel.viewDidLoad()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        imageView.image = nil
     }
     
     private func bind() {
@@ -53,11 +58,6 @@ class ViewController: UIViewController, Routable {
         viewModel.shouldAnimateActivityIndicator.bind = {
             $0 ? self.activityIndicatorView.startAnimating() : self.activityIndicatorView.stopAnimating()
         }
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        viewModel.viewDidDisappear()
     }
     
     // MARK: - IBActions

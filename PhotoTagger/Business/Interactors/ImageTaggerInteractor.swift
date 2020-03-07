@@ -18,27 +18,37 @@ struct ImageTaggerInteractor {
         self.network = network
     }
     
-    func uploadImage(_ progress: @escaping (Double) -> Void) -> Promise<String> {
+    func uploadImage(_ progress: @escaping (Double) -> Void) -> Promise<TagsAndColorsResponse> {
         return network
             .callAPIWithProgress(
                 api: ImaggaRouter.content(compress(image)),
                 model: String.self, progress
-            )
+        ).then(fetchTagsAndColors)
     }
     
     private func compress(_ image: UIImage) -> Data {
         return image.jpegData(compressionQuality: 0.5) ?? Data()
     }
     
-    func fetchTagsAndColors(contentID: String) -> Promise<([String], [PhotoColor])> {
+    private func fetchTagsAndColors(contentID: String) -> Promise<TagsAndColorsResponse> {
         return network.call(api: ImaggaRouter.tags(contentID), model: [String].self)
-            .then { (tags) -> Promise<([String], [PhotoColor])> in
-                return Promise<([String], [PhotoColor])> { fullfil, reject in
+            .then { (tags) -> Promise<TagsAndColorsResponse> in
+                return Promise<TagsAndColorsResponse> { fullfil, reject in
                     let colorsPromise = self.network.call(api: ImaggaRouter.colors(contentID), model: [PhotoColor].self)
                     colorsPromise.then { (colors) in
-                        fullfil((tags, colors))
+                        fullfil(TagsAndColorsResponse(tags, colors))
                     }.catch(reject)
                 }
         }
+    }
+}
+
+struct TagsAndColorsResponse: Codable {
+    let tags: [String]
+    let colors: [PhotoColor]
+    
+    init(_ tags: [String], _ colors: [PhotoColor]) {
+        self.tags = tags
+        self.colors = colors
     }
 }

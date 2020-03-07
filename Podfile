@@ -4,9 +4,14 @@
 target 'PhotoTagger' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for PhotoTagger
     pod 'Alamofire'
     pod 'Moya'
     pod 'PromisesSwift'
+  # Pods for PhotoTagger
+
+  target 'PhotoTaggerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end

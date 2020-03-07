@@ -23,11 +23,11 @@ class SelectPhotoViewModel: NSObject {
     let network: NetworkProtocol
     let system: SystemProtocol
     let router: RouterProtocol
-    let imageSelecter: ImageSelecter
+    let imageSelecter: ImageSelecterProtocol
     
     init(network: NetworkProtocol = MoyaManager(),
          system: SystemProtocol = SystemImp(),
-         imageSelecter: ImageSelecter = ImageSelecterImp(),
+         imageSelecter: ImageSelecterProtocol,
          router: RouterProtocol) {
         self.network = network
         self.system = system
@@ -44,17 +44,12 @@ class SelectPhotoViewModel: NSObject {
         return title
     }
     
-    func viewDidDisappear() {
-        photo.value = nil
-    }
-    
     func takePicture() {
         let imageSource: ImageSource = system.isCameraAvailable() ? .camera : .gallery
         let picker = Picker(source: imageSource,
                             presentationStyle: .fullscreen,
                             allowsEditing: false,
-                            delegate: self,
-                            presentingViewController: router.presentedView)
+                            delegate: self)
         imageSelecter.pickImage(from: picker)
     }
 }
@@ -69,22 +64,15 @@ extension SelectPhotoViewModel: ImageSelecterDelegate {
         isProgressBarVisibile.value = true
         shouldAnimateActivityIndicator.value = true
         
-        let interactor = ImageTaggerInteractor(image: image, network: network)
-        
-        interactor
+        ImageTaggerInteractor(image: image, network: network)
             .uploadImage { progress in
                 self.progressBarProgress.value = progress
-        }
-        .then(interactor.fetchTagsAndColors)
-        .then { (response) in
-                let tags = response.0
-                let colors = response.1
-                
+            }.then { (response) in
                 self.isTakePhotoButtonVisibile.value = true
                 self.isProgressBarVisibile.value = false
                 self.shouldAnimateActivityIndicator.value = false
                 
                 // TODO: - Route to TagsView
-        }
+            }
     }
 }

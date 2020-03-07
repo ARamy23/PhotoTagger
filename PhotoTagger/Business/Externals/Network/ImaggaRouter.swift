@@ -67,7 +67,7 @@ extension ImaggaRouter: TargetType {
         case .colors(let contentID):
             return .requestParameters(parameters: ["content": contentID, "extract_object_colors": 0], encoding: URLEncoding.default)
         case let .content(imageData):
-            var formData: [MultipartFormData] = [MultipartFormData(
+            let formData: [MultipartFormData] = [MultipartFormData(
                 provider: .data(imageData),
                 name: "imagefile",
                 fileName: "image.jpg",

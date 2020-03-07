@@ -9,15 +9,21 @@
 import Foundation
 import UIKit
 
-protocol ImageSelecter {
+protocol ImageSelecterProtocol {
     func pickImage(from picker: Picker)
 }
 
-class ImageSelecterImp: NSObject, ImageSelecter {
+class ImageSelecter: NSObject, ImageSelecterProtocol {
     
     var delegate: ImageSelecterDelegate?
     
     var picker: Picker?
+    
+    let presentingView: UIViewController
+    
+    init(presentingView: UIViewController) {
+        self.presentingView = presentingView
+    }
     
     func pickImage(from picker: Picker) {
         self.picker = picker
@@ -29,13 +35,13 @@ class ImageSelecterImp: NSObject, ImageSelecter {
         pickerController.modalPresentationStyle = picker.presentationStyle.iOSPresentationStyle
         
         
-        picker.presentingViewController.present(pickerController, animated: true)
+        presentingView.present(pickerController, animated: true)
     }
 }
 
-extension ImageSelecterImp: UINavigationControllerDelegate { }
+extension ImageSelecter: UINavigationControllerDelegate { }
 
-extension ImageSelecterImp: UIImagePickerControllerDelegate {
+extension ImageSelecter: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.originalImage] as? UIImage else {
             print("Info did not have the required UIImage for the Original Image")
@@ -56,7 +62,6 @@ struct Picker {
     let presentationStyle: PickerPresentationStyle
     let allowsEditing: Bool
     let delegate: ImageSelecterDelegate
-    let presentingViewController: UIViewController
 }
 
 enum ImageSource {
