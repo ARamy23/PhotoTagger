@@ -20,11 +20,14 @@
  * THE SOFTWARE.
  */
 
-import Foundation
+import UIKit
 
-struct PhotoColor {
-  var red: Int?
-  var green: Int?
-  var blue: Int?
-  var colorName: String?
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+  var window: UIWindow?
+
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    return true
+  }
 }

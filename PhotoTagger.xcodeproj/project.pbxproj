@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41D0C3891E36E5F700CB6C4B /* ImaggaRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D0C3881E36E5C900CB6C4B /* ImaggaRouter.framework */; };
+		211532831FFF755ED4195859 /* Pods_PhotoTaggerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B67C4558399EFF05F1A7F7 /* Pods_PhotoTaggerTests.framework */; };
 		932ED1F71BF9390D0072C1C4 /* PhotoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */; };
 		932ED1F91BF944590072C1C4 /* TagsColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ED1F81BF944590072C1C4 /* TagsColorsViewController.swift */; };
 		932ED1FB1BF9459E0072C1C4 /* TagsColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ED1FA1BF9459E0072C1C4 /* TagsColorsTableViewController.swift */; };
@@ -17,70 +17,38 @@
 		93EF0CAB1BF41DA20051B5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAA1BF41DA20051B5B1 /* Assets.xcassets */; };
 		93EF0CAE1BF41DA20051B5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EF0CAC1BF41DA20051B5B1 /* LaunchScreen.storyboard */; };
 		9569363E1E0B06AC00B49A5A /* TagsColorTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */; };
+		B80AA1C02412CE010003847F /* PhotoTaggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1BF2412CE010003847F /* PhotoTaggerTests.swift */; };
+		B80AA1D62412CF750003847F /* ExternalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D12412CF750003847F /* ExternalProtocols.swift */; };
+		B80AA1D72412CF750003847F /* MoyaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D32412CF750003847F /* MoyaManager.swift */; };
+		B80AA1D82412CF750003847F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D52412CF750003847F /* Router.swift */; };
+		B80AA1DA2412CF7E0003847F /* ImaggaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */; };
+		B80AA1DD2412E5300003847F /* SelectPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */; };
+		B80AA1E02412E6110003847F /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1DF2412E6110003847F /* System.swift */; };
+		B80AA1E22412E7580003847F /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E12412E7570003847F /* Dynamic.swift */; };
+		B80AA1E52412FC730003847F /* ImageTaggerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */; };
+		B80AA1E72412FFF60003847F /* ImageSelecterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E62412FFF60003847F /* ImageSelecterProtocol.swift */; };
+		B80AA1EA24130A4B0003847F /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1E924130A4B0003847F /* NetworkMock.swift */; };
+		B80AA1EC24130A5E0003847F /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1EB24130A5E0003847F /* RouterMock.swift */; };
+		B80AA1EE24130A6A0003847F /* SystemMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1ED24130A6A0003847F /* SystemMock.swift */; };
+		B80AA1F024130A870003847F /* ImageSelecterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1EF24130A870003847F /* ImageSelecterMock.swift */; };
+		B80AA1F62413E3CA0003847F /* BaseSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1F52413E3CA0003847F /* BaseSceneTests.swift */; };
+		B80AA1F92413E4A50003847F /* SelectPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AA1F82413E4A50003847F /* SelectPhotoTests.swift */; };
+		E5BD0CB5001D4373B6197CB9 /* Pods_PhotoTagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF3602377C2FA062F3FEBC1 /* Pods_PhotoTagger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41D0C2F81E36DE1500CB6C4B /* PBXContainerItemProxy */ = {
+		B80AA1C22412CE010003847F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
-		41D0C2FA1E36DE1500CB6C4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		41D0C2FC1E36DE1500CB6C4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
-			remoteInfo = "Alamofire macOS";
-		};
-		41D0C2FE1E36DE1500CB6C4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
-			remoteInfo = "Alamofire macOS Tests";
-		};
-		41D0C3001E36DE1500CB6C4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
-		41D0C3021E36DE1500CB6C4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		41D0C3041E36DE1500CB6C4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4202FE01B667AA100C997FB;
-			remoteInfo = "Alamofire watchOS";
-		};
-		41D0C3871E36E5C900CB6C4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41D0C3821E36E5C900CB6C4B /* ImaggaRouter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 41D0C3271E36E32600CB6C4B;
-			remoteInfo = ImaggaRouter;
+			containerPortal = 93EF0C981BF41DA20051B5B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93EF0C9F1BF41DA20051B5B1;
+			remoteInfo = PhotoTagger;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Frameworks/External/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		41D0C3821E36E5C900CB6C4B /* ImaggaRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImaggaRouter.xcodeproj; path = Frameworks/Internal/ImaggaRouter/ImaggaRouter.xcodeproj; sourceTree = "<group>"; };
+		1EF62BC0C4352EC692206B57 /* Pods-PhotoTagger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoTagger.release.xcconfig"; path = "Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger.release.xcconfig"; sourceTree = "<group>"; };
+		5FE9837F7E86CC9F6E226F8C /* Pods-PhotoTagger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoTagger.debug.xcconfig"; path = "Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger.debug.xcconfig"; sourceTree = "<group>"; };
 		932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoColor.swift; sourceTree = "<group>"; };
 		932ED1F81BF944590072C1C4 /* TagsColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsColorsViewController.swift; sourceTree = "<group>"; };
 		932ED1FA1BF9459E0072C1C4 /* TagsColorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsColorsTableViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +60,28 @@
 		93EF0CAD1BF41DA20051B5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93EF0CAF1BF41DA20051B5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsColorTableData.swift; sourceTree = "<group>"; };
+		A1B67C4558399EFF05F1A7F7 /* Pods_PhotoTaggerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoTaggerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80AA1BD2412CE000003847F /* PhotoTaggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoTaggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80AA1BF2412CE010003847F /* PhotoTaggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTaggerTests.swift; sourceTree = "<group>"; };
+		B80AA1C12412CE010003847F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B80AA1D12412CF750003847F /* ExternalProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalProtocols.swift; sourceTree = "<group>"; };
+		B80AA1D32412CF750003847F /* MoyaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaManager.swift; sourceTree = "<group>"; };
+		B80AA1D52412CF750003847F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaggaRouter.swift; sourceTree = "<group>"; };
+		B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewModel.swift; sourceTree = "<group>"; };
+		B80AA1DF2412E6110003847F /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		B80AA1E12412E7570003847F /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTaggerInteractor.swift; sourceTree = "<group>"; };
+		B80AA1E62412FFF60003847F /* ImageSelecterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelecterProtocol.swift; sourceTree = "<group>"; };
+		B80AA1E924130A4B0003847F /* NetworkMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
+		B80AA1EB24130A5E0003847F /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
+		B80AA1ED24130A6A0003847F /* SystemMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMock.swift; sourceTree = "<group>"; };
+		B80AA1EF24130A870003847F /* ImageSelecterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelecterMock.swift; sourceTree = "<group>"; };
+		B80AA1F52413E3CA0003847F /* BaseSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSceneTests.swift; sourceTree = "<group>"; };
+		B80AA1F82413E4A50003847F /* SelectPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoTests.swift; sourceTree = "<group>"; };
+		D2654681CB031A0F359D27E7 /* Pods-PhotoTaggerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoTaggerTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoTaggerTests/Pods-PhotoTaggerTests.release.xcconfig"; sourceTree = "<group>"; };
+		FAF3602377C2FA062F3FEBC1 /* Pods_PhotoTagger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoTagger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED227483DDC936B4E4A81AE /* Pods-PhotoTaggerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoTaggerTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoTaggerTests/Pods-PhotoTaggerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,51 +89,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D0C3891E36E5F700CB6C4B /* ImaggaRouter.framework in Frameworks */,
+				E5BD0CB5001D4373B6197CB9 /* Pods_PhotoTagger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80AA1BA2412CE000003847F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211532831FFF755ED4195859 /* Pods_PhotoTaggerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41D0C2EE1E36DE1500CB6C4B /* Products */ = {
+		391F111116FE19B6448287B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				41D0C2F91E36DE1500CB6C4B /* Alamofire.framework */,
-				41D0C2FB1E36DE1500CB6C4B /* Alamofire iOS Tests.xctest */,
-				41D0C2FD1E36DE1500CB6C4B /* Alamofire.framework */,
-				41D0C2FF1E36DE1500CB6C4B /* Alamofire macOS Tests.xctest */,
-				41D0C3011E36DE1500CB6C4B /* Alamofire.framework */,
-				41D0C3031E36DE1500CB6C4B /* Alamofire tvOS Tests.xctest */,
-				41D0C3051E36DE1500CB6C4B /* Alamofire.framework */,
+				FAF3602377C2FA062F3FEBC1 /* Pods_PhotoTagger.framework */,
+				A1B67C4558399EFF05F1A7F7 /* Pods_PhotoTaggerTests.framework */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		41D0C3831E36E5C900CB6C4B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41D0C3881E36E5C900CB6C4B /* ImaggaRouter.framework */,
-			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		93EF0C971BF41DA20051B5B1 = {
 			isa = PBXGroup;
 			children = (
-				41D0C3821E36E5C900CB6C4B /* ImaggaRouter.xcodeproj */,
-				41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */,
 				93EF0CA21BF41DA20051B5B1 /* PhotoTagger */,
+				B80AA1BE2412CE010003847F /* PhotoTaggerTests */,
 				93EF0CA11BF41DA20051B5B1 /* Products */,
+				FFC5A5CE3B3BD979D6505293 /* Pods */,
+				391F111116FE19B6448287B6 /* Frameworks */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 		};
 		93EF0CA11BF41DA20051B5B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				93EF0CA01BF41DA20051B5B1 /* PhotoTagger.app */,
+				B80AA1BD2412CE000003847F /* PhotoTaggerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,18 +138,165 @@
 		93EF0CA21BF41DA20051B5B1 /* PhotoTagger */ = {
 			isa = PBXGroup;
 			children = (
+				B80AA1CD2412CF150003847F /* Core */,
+				B80AA1CC2412CF030003847F /* Entities */,
+				B80AA1CB2412CEEA0003847F /* Business */,
+				B80AA1C82412CE7C0003847F /* Presentation */,
+				93EF0CAC1BF41DA20051B5B1 /* LaunchScreen.storyboard */,
+				93EF0CA71BF41DA20051B5B1 /* Main.storyboard */,
+			);
+			path = PhotoTagger;
+			sourceTree = "<group>";
+		};
+		B80AA1BE2412CE010003847F /* PhotoTaggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1F42413E3B30003847F /* Scenes */,
+				B80AA1E824130A0B0003847F /* Mocks */,
+				B80AA1BF2412CE010003847F /* PhotoTaggerTests.swift */,
+				B80AA1C12412CE010003847F /* Info.plist */,
+			);
+			path = PhotoTaggerTests;
+			sourceTree = "<group>";
+		};
+		B80AA1C82412CE7C0003847F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1CA2412CEC30003847F /* Tags and Colors */,
+				B80AA1C92412CE900003847F /* Select Photo */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B80AA1C92412CE900003847F /* Select Photo */ = {
+			isa = PBXGroup;
+			children = (
+				93EF0CA51BF41DA20051B5B1 /* ViewController.swift */,
+				B80AA1DC2412E52F0003847F /* SelectPhotoViewModel.swift */,
+			);
+			path = "Select Photo";
+			sourceTree = "<group>";
+		};
+		B80AA1CA2412CEC30003847F /* Tags and Colors */ = {
+			isa = PBXGroup;
+			children = (
+				932ED1FA1BF9459E0072C1C4 /* TagsColorsTableViewController.swift */,
+				932ED1F81BF944590072C1C4 /* TagsColorsViewController.swift */,
+			);
+			path = "Tags and Colors";
+			sourceTree = "<group>";
+		};
+		B80AA1CB2412CEEA0003847F /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1E32412FC640003847F /* Interactors */,
+				B80AA1E12412E7570003847F /* Dynamic.swift */,
+				B80AA1D02412CF750003847F /* Externals */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		B80AA1CC2412CF030003847F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */,
+				9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B80AA1CD2412CF150003847F /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				93EF0CA31BF41DA20051B5B1 /* AppDelegate.swift */,
 				93EF0CAA1BF41DA20051B5B1 /* Assets.xcassets */,
 				93EF0CAF1BF41DA20051B5B1 /* Info.plist */,
-				93EF0CAC1BF41DA20051B5B1 /* LaunchScreen.storyboard */,
-				93EF0CA71BF41DA20051B5B1 /* Main.storyboard */,
-				932ED1F61BF9390D0072C1C4 /* PhotoColor.swift */,
-				932ED1FA1BF9459E0072C1C4 /* TagsColorsTableViewController.swift */,
-				932ED1F81BF944590072C1C4 /* TagsColorsViewController.swift */,
-				9569363D1E0B06AC00B49A5A /* TagsColorTableData.swift */,
-				93EF0CA51BF41DA20051B5B1 /* ViewController.swift */,
 			);
-			path = PhotoTagger;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B80AA1D02412CF750003847F /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1D12412CF750003847F /* ExternalProtocols.swift */,
+				B80AA1D22412CF750003847F /* Network */,
+				B80AA1D42412CF750003847F /* Router */,
+				B80AA1DE2412E6010003847F /* System */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		B80AA1D22412CF750003847F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1D92412CF7E0003847F /* ImaggaRouter.swift */,
+				B80AA1D32412CF750003847F /* MoyaManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B80AA1D42412CF750003847F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1D52412CF750003847F /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B80AA1DE2412E6010003847F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1DF2412E6110003847F /* System.swift */,
+				B80AA1E62412FFF60003847F /* ImageSelecterProtocol.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		B80AA1E32412FC640003847F /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1E42412FC730003847F /* ImageTaggerInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		B80AA1E824130A0B0003847F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1E924130A4B0003847F /* NetworkMock.swift */,
+				B80AA1EB24130A5E0003847F /* RouterMock.swift */,
+				B80AA1ED24130A6A0003847F /* SystemMock.swift */,
+				B80AA1EF24130A870003847F /* ImageSelecterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B80AA1F42413E3B30003847F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1F72413E4960003847F /* Select Photo */,
+				B80AA1F52413E3CA0003847F /* BaseSceneTests.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B80AA1F72413E4960003847F /* Select Photo */ = {
+			isa = PBXGroup;
+			children = (
+				B80AA1F82413E4A50003847F /* SelectPhotoTests.swift */,
+			);
+			path = "Select Photo";
+			sourceTree = "<group>";
+		};
+		FFC5A5CE3B3BD979D6505293 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FE9837F7E86CC9F6E226F8C /* Pods-PhotoTagger.debug.xcconfig */,
+				1EF62BC0C4352EC692206B57 /* Pods-PhotoTagger.release.xcconfig */,
+				FED227483DDC936B4E4A81AE /* Pods-PhotoTaggerTests.debug.xcconfig */,
+				D2654681CB031A0F359D27E7 /* Pods-PhotoTaggerTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93EF0CB21BF41DA20051B5B1 /* Build configuration list for PBXNativeTarget "PhotoTagger" */;
 			buildPhases = (
+				BD8259163109B61278C2E6B2 /* [CP] Check Pods Manifest.lock */,
 				93EF0C9C1BF41DA20051B5B1 /* Sources */,
 				93EF0C9D1BF41DA20051B5B1 /* Frameworks */,
 				93EF0C9E1BF41DA20051B5B1 /* Resources */,
+				E30C4CFCDF91D0D39799A745 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,19 +321,44 @@
 			productReference = 93EF0CA01BF41DA20051B5B1 /* PhotoTagger.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B80AA1BC2412CE000003847F /* PhotoTaggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B80AA1C62412CE010003847F /* Build configuration list for PBXNativeTarget "PhotoTaggerTests" */;
+			buildPhases = (
+				BAB19A8165CEA76B046BE4D4 /* [CP] Check Pods Manifest.lock */,
+				B80AA1B92412CE000003847F /* Sources */,
+				B80AA1BA2412CE000003847F /* Frameworks */,
+				B80AA1BB2412CE000003847F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B80AA1C32412CE010003847F /* PBXTargetDependency */,
+			);
+			name = PhotoTaggerTests;
+			productName = PhotoTaggerTests;
+			productReference = B80AA1BD2412CE000003847F /* PhotoTaggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		93EF0C981BF41DA20051B5B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Razeware LLC";
 				TargetAttributes = {
 					93EF0C9F1BF41DA20051B5B1 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 969Y6REAB6;
 						LastSwiftMigration = 0810;
+					};
+					B80AA1BC2412CE000003847F = {
+						CreatedOnToolsVersion = 11.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 93EF0C9F1BF41DA20051B5B1;
 					};
 				};
 			};
@@ -206,87 +367,20 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 93EF0C971BF41DA20051B5B1;
 			productRefGroup = 93EF0CA11BF41DA20051B5B1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 41D0C2EE1E36DE1500CB6C4B /* Products */;
-					ProjectRef = 41D0C2ED1E36DE1500CB6C4B /* Alamofire.xcodeproj */;
-				},
-				{
-					ProductGroup = 41D0C3831E36E5C900CB6C4B /* Products */;
-					ProjectRef = 41D0C3821E36E5C900CB6C4B /* ImaggaRouter.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				93EF0C9F1BF41DA20051B5B1 /* PhotoTagger */,
+				B80AA1BC2412CE000003847F /* PhotoTaggerTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		41D0C2F91E36DE1500CB6C4B /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 41D0C2F81E36DE1500CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D0C2FB1E36DE1500CB6C4B /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = 41D0C2FA1E36DE1500CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D0C2FD1E36DE1500CB6C4B /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 41D0C2FC1E36DE1500CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D0C2FF1E36DE1500CB6C4B /* Alamofire macOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire macOS Tests.xctest";
-			remoteRef = 41D0C2FE1E36DE1500CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D0C3011E36DE1500CB6C4B /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 41D0C3001E36DE1500CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D0C3031E36DE1500CB6C4B /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = 41D0C3021E36DE1500CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D0C3051E36DE1500CB6C4B /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 41D0C3041E36DE1500CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41D0C3881E36E5C900CB6C4B /* ImaggaRouter.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ImaggaRouter.framework;
-			remoteRef = 41D0C3871E36E5C900CB6C4B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93EF0C9E1BF41DA20051B5B1 /* Resources */ = {
@@ -299,23 +393,132 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B80AA1BB2412CE000003847F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAB19A8165CEA76B046BE4D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoTaggerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD8259163109B61278C2E6B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoTagger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30C4CFCDF91D0D39799A745 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93EF0C9C1BF41DA20051B5B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80AA1E52412FC730003847F /* ImageTaggerInteractor.swift in Sources */,
+				B80AA1E22412E7580003847F /* Dynamic.swift in Sources */,
 				932ED1F71BF9390D0072C1C4 /* PhotoColor.swift in Sources */,
+				B80AA1DD2412E5300003847F /* SelectPhotoViewModel.swift in Sources */,
 				932ED1F91BF944590072C1C4 /* TagsColorsViewController.swift in Sources */,
+				B80AA1D82412CF750003847F /* Router.swift in Sources */,
+				B80AA1E02412E6110003847F /* System.swift in Sources */,
+				B80AA1DA2412CF7E0003847F /* ImaggaRouter.swift in Sources */,
+				B80AA1E72412FFF60003847F /* ImageSelecterProtocol.swift in Sources */,
+				B80AA1D62412CF750003847F /* ExternalProtocols.swift in Sources */,
 				932ED1FB1BF9459E0072C1C4 /* TagsColorsTableViewController.swift in Sources */,
 				9569363E1E0B06AC00B49A5A /* TagsColorTableData.swift in Sources */,
 				93EF0CA61BF41DA20051B5B1 /* ViewController.swift in Sources */,
 				93EF0CA41BF41DA20051B5B1 /* AppDelegate.swift in Sources */,
+				B80AA1D72412CF750003847F /* MoyaManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B80AA1B92412CE000003847F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80AA1EC24130A5E0003847F /* RouterMock.swift in Sources */,
+				B80AA1F62413E3CA0003847F /* BaseSceneTests.swift in Sources */,
+				B80AA1EA24130A4B0003847F /* NetworkMock.swift in Sources */,
+				B80AA1F92413E4A50003847F /* SelectPhotoTests.swift in Sources */,
+				B80AA1EE24130A6A0003847F /* SystemMock.swift in Sources */,
+				B80AA1C02412CE010003847F /* PhotoTaggerTests.swift in Sources */,
+				B80AA1F024130A870003847F /* ImageSelecterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B80AA1C32412CE010003847F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93EF0C9F1BF41DA20051B5B1 /* PhotoTagger */;
+			targetProxy = B80AA1C22412CE010003847F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		93EF0CA71BF41DA20051B5B1 /* Main.storyboard */ = {
@@ -427,31 +630,105 @@
 		};
 		93EF0CB31BF41DA20051B5B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE9837F7E86CC9F6E226F8C /* Pods-PhotoTagger.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = PhotoTagger/Info.plist;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoTagger/Core/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.PhotoTagger;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramy.PhotoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		93EF0CB41BF41DA20051B5B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF62BC0C4352EC692206B57 /* Pods-PhotoTagger.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = PhotoTagger/Info.plist;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoTagger/Core/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.PhotoTagger;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramy.PhotoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B80AA1C42412CE010003847F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED227483DDC936B4E4A81AE /* Pods-PhotoTaggerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PhotoTaggerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramy.PhotoTaggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoTagger.app/PhotoTagger";
+			};
+			name = Debug;
+		};
+		B80AA1C52412CE010003847F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2654681CB031A0F359D27E7 /* Pods-PhotoTaggerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PhotoTaggerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramy.PhotoTaggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoTagger.app/PhotoTagger";
 			};
 			name = Release;
 		};
@@ -472,6 +749,15 @@
 			buildConfigurations = (
 				93EF0CB31BF41DA20051B5B1 /* Debug */,
 				93EF0CB41BF41DA20051B5B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B80AA1C62412CE010003847F /* Build configuration list for PBXNativeTarget "PhotoTaggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80AA1C42412CE010003847F /* Debug */,
+				B80AA1C52412CE010003847F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,14 +20,11 @@
  * THE SOFTWARE.
  */
 
-import UIKit
+import Foundation
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-  var window: UIWindow?
-
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    return true
-  }
+struct PhotoColor: Codable {
+  var red: Int?
+  var green: Int?
+  var blue: Int?
+  var colorName: String?
 }
